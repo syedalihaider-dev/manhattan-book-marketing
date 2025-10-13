@@ -1,0 +1,9 @@
+.root {
+  @apply md:py-[80px] pb-[60px];
+}
+.content {
+  @apply text-center 2xl:max-w-[1200px] max-w-[900px] mx-auto pb-[60px];
+}
+.title {
+  @apply font-mono font-normal text-[20px] md:text-[30px] lg:text-[40px] 2xl:text-[60px] leading-[1.1];
+}

@@ -1,0 +1,15 @@
+.root {
+    @apply relative overflow-hidden
+}
+
+.content {
+    @apply sm:text-center lg:text-left lg:absolute top-[-60px] bottom-0 left-0 flex  flex-col justify-center right-0 container pt-[80px] lg:pt-0
+}
+
+.content .title {
+    @apply text-[22px] sm:text-[25px] md:text-[30px] lg:text-[45px] 2xl:text-[55px] font-mono font-normal leading-tight mb-4
+}
+
+.content .para {
+    @apply text-navy text-base sm:text-lg 3xl:text-xl leading-normal xl:max-w-[500px] lg:max-w-[450px]
+}

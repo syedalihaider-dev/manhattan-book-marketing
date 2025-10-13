@@ -1,0 +1,44 @@
+.root {
+  @apply grid grid-cols-12 gap-x-12 text-black font-manrope;
+}
+.left {
+  @apply col-span-8 mb-10 py-10;
+}
+.navText > .title {
+  @apply text-[45px] 2xl:text-[55px] font-bold !leading-tight bg-gradient [-webkit-background-clip:_text] [-webkit-text-fill-color:_transparent];
+}
+.navText > .para {
+  @apply text-lg leading-normal mt-5 mb-10 text-black max-w-[950px];
+}
+
+.title {
+  @apply text-4xl 3xl:text-5xl font-extrabold !leading-tight text-white;
+}
+
+.para {
+  @apply text-xl 2xl:text-2xl leading-tight mt-5 mb-10 text-white;
+}
+
+.right {
+  @apply relative z-10 col-span-4 items-center mb-0 px-16 py-10;
+}
+.right::before {
+  @apply [content:""] absolute bg-black/95 -z-10 inset-0 mr-[-200px];
+}
+.right img {
+  @apply me-auto;
+}
+
+.links {
+  @apply grid grid-cols-3 col-span-8 xl:gap-x-[40px];
+}
+
+.navlinks {
+  @apply grid grid-cols-1 gap-y-[20px] 2xl:text-base text-sm font-manrope font-semibold;
+}
+.bottomBar {
+  @apply relative z-10 col-span-12 text-center text-white text-[20px] font-semibold font-manrope h-16 flex items-center justify-center;
+}
+.bottomBar::before {
+  @apply [content:""] block -z-10 bg-gradient absolute mr-[-200px] ml-[-200px] w-[2000px] inset-0 h-max py-10;
+}
