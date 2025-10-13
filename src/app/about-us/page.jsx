@@ -14,7 +14,7 @@ export default function AboutUs() {
             <AboutMarketing />
             <BelieveIn />
             <Traditional />
-            <WhyChoose title="Why Choose Cross Podcast??"
+            <WhyChoose title="Why Choose Cross Podcast?"
                 desc="At Cross Podcast, we are dedicated to bringing your podcast vision to life. With tailored solutions, innovative tools, and a committed team, we combine creativity and expertise to ensure your podcast reaches the listeners it deserves."
                 data={[
                     {
