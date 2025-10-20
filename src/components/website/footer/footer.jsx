@@ -103,7 +103,7 @@ export default function Footer() {
                                         City3,
                                         "USA, NYC",
                                         "1997 Broadway, New York, NY 10023, USA",
-                                        "(415) 634-5647",
+                                        "(646) 480-0930",
                                         "contact@manhattanbookmarketing.com"
                                     ],
                                 ].map(([img, title, address, num, mail]) => (

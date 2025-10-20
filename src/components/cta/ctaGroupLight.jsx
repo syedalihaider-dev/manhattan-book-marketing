@@ -10,9 +10,9 @@ export function CTAGroupLight() {
 
             <CTA 
                 icon="call-pink"
-                link="tel:4156345647"
+                link="tel:6464800930"
                 css="bg-transparent border-2 text-black border-black hover:text-pink hover:border-pink [&>img]:brightness-0 [&>img]:invert-0 [&:hover>img]:brightness-[inherit] [&:hover>img]:invert"
-                text="(415) 634-5647"
+                text="(646) 480-0930"
             />
         </>
     )

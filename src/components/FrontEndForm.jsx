@@ -57,7 +57,7 @@ const FrontEndForm = ({ label = true, theme = false, lastName = false, policy = 
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         ...values,
-        url: window.location.href, // 👈 yahan URL inject ho raha hai
+        url: window.location.href,
       }),
     });
 

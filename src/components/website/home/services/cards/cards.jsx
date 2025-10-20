@@ -121,7 +121,7 @@ export default function Cards() {
               css="bg-white text-purple font-manrope font-medium capitalize [boxShadow:0px_5px_15px_rgba(15,_23,_42,_0.1)] hover:bg-black hover:border hover:border-white hover:text-white"
               text="Let’s Talk!"
               icon="chat-pink"
-              onClick="$zopim.livechat.window.show();"
+              onClick="zopim"
             />
           </div>
           <Image src={Promo} alt="domain" />

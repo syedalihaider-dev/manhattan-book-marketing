@@ -5,13 +5,12 @@ export async function POST(req) {
   try {
     const body = await req.json();
     const { firstName, lastName, phone, email, message, policy, nda, url } = body;
-    // 🔹 Get IP Address
+
     const ip =
       req.headers.get("x-forwarded-for")?.split(",")[0] ||
       req.headers.get("x-real-ip") ||
       "IP not found";
 
-    // 🔹 Get Country & City from IP
     let country = "Unknown";
     let city = "Unknown";
 
@@ -26,7 +25,6 @@ export async function POST(req) {
       }
     }
 
-    // ✅ Zoho SMTP transporter
    const transporter = nodemailer.createTransport({
       host: "maltaserver.stagingtestserver.com",
       port: 587,
@@ -37,13 +35,12 @@ export async function POST(req) {
       },
     });
 
-    // ✅ Send email
     await transporter.sendMail({
-      from: `"Website Form" <no-reply@manhattanbookmarketing.com>`,
+      from: `"Manhattan Book Marketing (Website Lead)" <no-reply@manhattanbookmarketing.com>`,
       to: ["ali.haider@canvasdigital.org","ppc@iceanimations.com"],
-      subject: " New Contact Form Submission",
+      subject: "Manhattan Book Marketing — New Contact Form Submission",
       html: `
-        <h2>New Contact Form Submission</h2>
+        <h2>Manhattan Book Marketing</h2>
         <p><strong>Name:</strong> ${firstName} ${lastName || ""}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
