@@ -4,6 +4,7 @@ import "./globals.css"
 import { fontManrope, fontMono, fontSans } from "./fonts"
 // Components
 import { Footer, Header, Popup } from "@/components"
+import ChatWidget from "@/components/ChatWidget";
 // Meta Data
 export const metadata = {
   title: "Manhattan Book Marketing",
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
         </main>
         <Footer />
         {/* <Popup /> */}
+        <ChatWidget />
       </body>
     </html>
   );

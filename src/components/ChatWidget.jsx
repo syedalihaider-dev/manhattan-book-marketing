@@ -3,7 +3,6 @@ import Script from "next/script";
 export default function ChatWidget() {
   return (
     <>
-      {/* Zendesk snippet */}
       <Script
         id="ze-snippet"
         src="https://static.zdassets.com/ekr/snippet.js?key=239dfa05-01f6-4362-bfb9-4f75a7455e10"

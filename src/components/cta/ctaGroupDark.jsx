@@ -1,24 +1,30 @@
-// // Components
-// import { CTA } from "@/components"
+"use client";
+import { CTA } from "@/components";
 
 // export function CTAGroupDark() {
-//     return (
-//         <>
-//             <CTA css="hover:bg-black hover:border hover:border-white hover:[boxShadow:0px_5px_15px_rgba(255,_118,_117,_0.3)] bg-gradient hover:bg-none" />
-//             <CTA icon="call" css="bg-transparent border-2 border-white hover:text-pink hover:border-pink [&>img]:brightness-0 [&>img]:invert [&:hover>img]:invert-0 [&:hover>img]:brightness-[inherit]" text="(415) 634-5647" />
-//         </>
-//     )
+//   return (
+//     <>
+//       <CTA
+//         css="hover:bg-black hover:border hover:border-white hover:[boxShadow:0px_5px_15px_rgba(255,_118,_117,_0.3)] bg-gradient hover:bg-none"
+//         onClick={() => setShowPopup(true)}
+//       />
+//       <CTA
+//         icon="call"
+//         text="(646) 480-0930"
+//         link="tel:6464800930"
+//         css="bg-transparent border-2 border-white hover:text-pink hover:border-pink [&>img]:brightness-0 [&>img]:invert [&:hover>img]:invert-0 [&:hover>img]:brightness-[inherit]"
+//       />
+//     </>
+//   )
 // }
-
-// Components
-import { CTA } from "@/components"
 
 export function CTAGroupDark() {
   return (
     <>
       <CTA
+        text="Get Started"
         css="hover:bg-black hover:border hover:border-white hover:[boxShadow:0px_5px_15px_rgba(255,_118,_117,_0.3)] bg-gradient hover:bg-none"
-        onClick={() => setShowPopup(true)}
+        action="zendesk"
       />
 
       <CTA
@@ -28,5 +34,5 @@ export function CTAGroupDark() {
         css="bg-transparent border-2 border-white hover:text-pink hover:border-pink [&>img]:brightness-0 [&>img]:invert [&:hover>img]:invert-0 [&:hover>img]:brightness-[inherit]"
       />
     </>
-  )
+  );
 }
