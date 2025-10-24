@@ -2,8 +2,8 @@
 import Link from "next/link"
 import Image from "next/image"
 // Media
-import City1 from "media/footer/city-lisbon-light.png"
-import City2 from "media/footer/city-london-light.png"
+// import City1 from "media/footer/city-lisbon-light.png"
+// import City2 from "media/footer/city-london-light.png"
 import City3 from "media/footer/city-milan-light.png"
 // Components
 import { CTAGroupDark } from "@/components"
@@ -80,6 +80,29 @@ export default function Footer() {
                                         </clipPath>
                                     </defs>
                                 </svg>
+                                {/* ----- DMCA badge placed directly under the city cards ----- */}
+                                <div style={{ 
+                                                marginTop: 20, 
+                                                textAlign: "left", 
+                                                width: "100%" 
+                                            }}>
+                                    <a
+                                    href="//www.dmca.com/Protection/Status.aspx?ID=d9369113-6905-4676-95df-c6e1c73736c6"
+                                    title="DMCA.com Protection Status"
+                                    className="dmca-badge"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{ display: "inline-block" }}
+                                    >
+                                    <img
+                                        src="https://images.dmca.com/Badges/DMCA_logo-grn-btn120w.png?ID=d9369113-6905-4676-95df-c6e1c73736c6"
+                                        alt="DMCA.com Protection Status"
+                                        width={120}
+                                        height={40}
+                                        style={{ display: "inline-block" }}
+                                    />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div className={styles.__rightGrid}>
